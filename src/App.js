@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Modale from './Composants/Modale.js';
 import NavBar from './Composants/NavBar'
-
+import Compteur from './Composants/Compteur'
+import Onglet from './Composants/Onglet'
 function App() {
 
   const [toggleModale, setToggleModale] = useState(false);
@@ -34,7 +35,7 @@ function App() {
 
   return (
     <div className="App">
-      <NavBar />
+      {/* <NavBar />
       <button onClick={openModale}>Ouvrir la Modale</button>
       {toggleModale ?
 
@@ -42,7 +43,9 @@ function App() {
 
         : ''
       }
-
+      <Compteur /> */}
+        <Onglet />
+      
     </div>
   );
 }

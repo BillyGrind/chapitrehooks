@@ -21,10 +21,10 @@ export default function NavBar() {
 
         }
         window.addEventListener('resize', changeWidth);
-        return () => {
-            window.removeEventListener('resize', changeWidth)
-        }
-    })
+        // return () => {
+        //     window.removeEventListener('resize', changeWidth)
+        // }
+    }, [])
 
     return (
         <div>
